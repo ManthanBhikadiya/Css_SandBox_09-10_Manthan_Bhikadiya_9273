@@ -50,6 +50,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 70px;
 }
 
 .nav-links ul {
@@ -104,6 +105,15 @@ a {
     color: #D66A8F;
 }
 
+.mobile-btn {
+  display: none;
+  font-size: 26px;
+  background: none;
+  color:#343f52 ;
+  border: none;
+  cursor: pointer;
+}
+
 /* interface start*/
 
 .Header-image-main {
@@ -148,7 +158,7 @@ a {
 
 .interface-user {
     padding: 20px;
-    max-width: 52%;
+    width: 52%;
 }
 
 .interface-user h1 {
@@ -342,15 +352,16 @@ a {
 .service-container {
     max-width: 90%;
     margin: auto;
-    display: flex;
     padding-bottom: 40px;
     justify-content: center;
     justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 
 .service-box {
     flex: 1 1 1px;
-    max-width: 250px;
+    max-width: 100%;
     padding: 20px;
 }
 
@@ -371,7 +382,7 @@ h3 {
     color: #2c3e50;
 }
 
-p {
+.service-box p {
     color: #6c757d;
     font-size: 16px;
     line-height: 1.5;
@@ -393,7 +404,6 @@ p {
 
 .main-projects {
     display: flex;
-    justify-content: center;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
@@ -446,7 +456,7 @@ p {
 }
 
 .web-text {
-    max-width: 35%;
+    width: 35%;
 }
 
 .web-text p {
@@ -480,7 +490,6 @@ p {
 }
 
 .mobile-container {
-    display: flex;
     gap: 100px;
     display: flex;
     justify-content: space-between;
@@ -492,7 +501,8 @@ p {
 }
 
 .mobile-content {
-    max-width: 300px;
+    /* max-width: 300px; */
+    width: 24%;
 }
 
 .mobile-content h4 {
@@ -526,20 +536,18 @@ p {
 
 .missio-theme {
     display: flex;
-    justify-content: center;
-    gap: 40px;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    justify-content: space-evenly;
 }
 
 .box {
     background-color: #ffffff;
-    width: 500px;
+    width: 42%;
     padding: 40px 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-radius: 10px;
 }
 
@@ -603,13 +611,13 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
     gap: 40px;
 }
 
 .message-text {
     flex: 1;
-    max-width: 300px;
+    /* width: 300px; */
+    /* max-width: 35%; */
 }
 
 .message-text a img {
@@ -633,7 +641,8 @@ p {
 
 .message-form {
     flex: 1;
-    max-width: 500px;
+    /* max-width: 500px; */
+    /* max-width: 48%; */
 }
 
 form {
