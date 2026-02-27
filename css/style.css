@@ -14,11 +14,14 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .container {
-    width: 1500px;
-    margin: auto;
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .flex-container {
@@ -42,9 +45,7 @@ a {
 }
 
 .navbar {
-    /* max-width: 1500px; */
-    width: 78.5%;
-    margin: auto;
+    width: 100%;
     padding: 20px 30px;
     border-radius: 10px;
     background-color: #fff;
@@ -87,6 +88,12 @@ a {
 
 .nav-logo img {
     height: 26px;
+    width: auto;
+}
+
+.navbar-image img {
+    height: 26px;
+    width: auto;
 }
 
 .nav-link ul {
@@ -111,9 +118,14 @@ a {
   display: none;
   font-size: 26px;
   background: none;
-  color:#343f52 ;
+  color: #343f52;
   border: none;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.mobile-btn:hover {
+  color: #D66A8F;
 }
 
 /* interface start*/
@@ -430,19 +442,67 @@ h3 {
 
 
 
-/* Snowlake Theme  */
+/* Wrapper sections */
+
+.header-bg {
+    background-color: #f6f7f9;
+}
+
+.web-section-wrapper {
+    padding: 60px 20px;
+}
 
 .web-section {
-    max-width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    padding: 30px 70px;
+    padding: 30px 40px;
     background-color: #f6f3f9;
     border-radius: 10px;
-    margin-bottom: 50px;
 }
+
+.mobile-section-wrapper {
+    padding: 60px 20px;
+    background-color: #edf2fc;
+}
+
+.mobile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #edf2fc;
+    border-radius: 10px;
+}
+
+.missio-theme-wrapper {
+    padding: 60px 20px;
+}
+
+.missio-theme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.message-section-wrapper {
+    padding: 60px 20px;
+    background-color: #faf0f3;
+}
+
+.message-section {
+    background-color: #faf0f3;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+.footer-wrapper {
+    background-color: #f6f7f9;
+}
+
+/* Snowlake Theme  */
 
 
 .web-text h4 {
@@ -481,15 +541,6 @@ h3 {
 }
 
 /* Budget App */
-
-.mobile-section {
-    max-width: 90%;
-    margin: auto;
-    padding: 60px 70px;
-    background-color: #edf2fc;
-    border-radius: 10px;
-    margin-bottom: 50px;
-}
 
 .mobile-container {
     gap: 100px;
@@ -535,13 +586,6 @@ h3 {
 }
 
 /* Missio Theme and Storage App */
-
-.missio-theme {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    justify-content: space-evenly;
-}
 
 .box {
     background-color: #ffffff;
@@ -601,13 +645,6 @@ h3 {
 }
 
 /* message section */
-
-.message-section {
-    background-color: #faf0f3;
-    padding: 60px 60px;
-    border-radius: 10px;
-    margin: 0 55px;
-}
 
 .message-container {
     display: flex;
@@ -699,4 +736,11 @@ button:hover {
     margin: 20px 0px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    background-color: #f6f7f9;
+    padding: 30px 20px;
+    border-top: 1px solid #eee;
 }
